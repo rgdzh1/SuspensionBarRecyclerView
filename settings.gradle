@@ -1,0 +1,3 @@
+rootProject.name='SuspensionBarRecyclerView'
+include ':app'
+include ':library'
