@@ -35,6 +35,6 @@ binding.shrv.setAdapter(new MyAdapter());
 使用详情可以看Demo中如何做的, 非常的简单.
 #### 效果图
 
-![效果图](img/Android 自定义RecyclerView Item头部悬浮吸顶.gif)
+![效果图](img/Item头部悬浮吸顶.gif)
 
 
