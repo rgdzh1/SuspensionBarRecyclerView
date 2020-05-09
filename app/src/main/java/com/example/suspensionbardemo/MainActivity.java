@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         binding.shrv.setUpdateSuspensionBarListener(new SuspensionBarRecyclerView.UpdateSuspensionBarListener() {
             @Override
             public void updateSuspensionBar(View mSuspensionBar, int mFirstVisibleIndex) {
-                ImageLoader.getInstance().displayImage(MyAdapter.getAvatarResUrl(mFirstVisibleIndex), ((ImageView) mSuspensionBar.findViewById(R.id.iv_avatar_content)));
-                ((TextView) mSuspensionBar.findViewById(R.id.tv_nickname_content)).setText("NetEase " + mFirstVisibleIndex);
+                ImageLoader.getInstance().displayImage(MyAdapter.getAvatarResUrl(mFirstVisibleIndex), ((ImageView) mSuspensionBar.findViewById(R.id.iv_avatar)));
+                ((TextView) mSuspensionBar.findViewById(R.id.tv_nickname)).setText("NetEase " + mFirstVisibleIndex);
             }
         });
         binding.shrv.setAdapter(new MyAdapter());
