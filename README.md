@@ -1,5 +1,6 @@
 ### SuspensionBarRecyclerView
 > 屏幕中RecyclerView展示的第一个可视条目的头可以悬浮在RecyclerView控件顶端.
+> [源码分析](https://blog.csdn.net/MoLiao2046/article/details/106025618)
 ##### 依赖
 ```groovy
 implementation 'com.yey.suspensionbarrv:library:0.0.1'
@@ -31,4 +32,9 @@ binding.shrv.setUpdateSuspensionBarListener(new SuspensionBarRecyclerView.Update
 // 设置好Adapter,Adpater和普通Adapter没有什么不同.
 binding.shrv.setAdapter(new MyAdapter());
 ```
-用例详情可以看Demo中如何做的, 非常的方便简单.
+使用详情可以看Demo中如何做的, 非常的简单.
+#### 效果图
+
+![效果图](img/Android 自定义RecyclerView Item头部悬浮吸顶.gif)
+
+

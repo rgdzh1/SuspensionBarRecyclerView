@@ -110,7 +110,7 @@ public class SuspensionBarRecyclerView extends FrameLayout {
                             // 假如手指向下滑动, 刚好新的第一Item从屏幕顶端滑出来时,设置mSuspensionBar为透明.
                             mSuspensionBar.setAlpha(0);
                         }
-//                        Log.e(TAG, "正在移动");
+                        //Log.e(TAG, "正在移动");
                     } else {
                         // mSuspensionBar.getY() < 0 保证Alpha动画不会多次执行
                         if (mSuspensionBar.getY() < 0) {
@@ -120,15 +120,15 @@ public class SuspensionBarRecyclerView extends FrameLayout {
                             AlphaAnimation alphaAnimation = new AlphaAnimation(0, 1);
                             alphaAnimation.setDuration(1500);
                             mSuspensionBar.startAnimation(alphaAnimation);
-//                            Log.e(TAG, "正在执行动画");
+                            //Log.e(TAG, "正在执行动画");
                         } else {
                             // 这里是当mSuspensionBar完全展示在屏幕中时候,设置为不透明
                             mSuspensionBar.setAlpha(1);
-//                            Log.e(TAG, "mSuspensionBar.getY() > 0");
+                            //Log.e(TAG, "mSuspensionBar.getY() > 0");
                         }
                     }
                 }
-//                Log.e(TAG, "dy  " + dy);
+                //Log.e(TAG, "dy  " + dy);
             }
         });
     }
